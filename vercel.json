@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/auth/me", "destination": "/api/auth/me.mjs" },
+    { "source": "/api/auth/signup", "destination": "/api/auth/signup.mjs" },
+    { "source": "/api/auth/signin", "destination": "/api/auth/signin.mjs" },
+    { "source": "/api/auth/signout", "destination": "/api/auth/signout.mjs" },
+    { "source": "/api/auth/verify", "destination": "/api/auth/verify.mjs" },
+    { "source": "/api/auth/resend", "destination": "/api/auth/resend.mjs" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
